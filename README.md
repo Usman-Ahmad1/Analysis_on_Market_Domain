@@ -47,15 +47,30 @@ The analysis utilized a transactional e-commerce dataset containing **500,000+ r
 
 ## 📊 Task 1: Sales & Product Performance
 
-### Category Overview
-- **Top Market:** 🇬🇧 The **United Kingdom** is the dominant contributor to total sales revenue
-- **Top Products:** The **best-selling 10 products** by capped quantity were identified — these form the inventory backbone of the business
-- **Sales Trends:** Peak revenue occurred in specific months with noticeable seasonal dips — identified via monthly and weekly trend analysis
+### Top 10 Best-Selling Products
+
+![Top 10 Best-Selling Products](images/top_products.png)
+
+**JUMBO BAG RED RETROSPOT** leads all products by a significant margin, with over 35,000 units sold. The top 10 products form the inventory backbone of the business and should be prioritized in stock planning.
+
+---
+
+### Top 10 Countries by Total Sales
+
+![Top 10 Countries by Total Sales](images/top_countries.png)
+
+🇬🇧 The **United Kingdom** completely dominates sales revenue — dwarfing all other markets combined. EIRE, Germany, and the Netherlands follow as secondary markets, highlighting a clear geographic concentration of demand.
+
+---
 
 ### Revenue Forecasting
+
+![Revenue Forecast - Next 6 Months](images/revenue_forecast.png)
+
 - Trained a **Linear Regression** model on monthly aggregated revenue
-- Forecasted the next **6 months** of revenue to support budget planning
-- Visualized actual vs. forecasted revenue using line plots
+- Forecasted the next **6 months** of revenue (shown as the red dashed line)
+- Peak revenue occurred in **November 2011**, likely driven by holiday season demand
+- The forecast projects a **steady recovery** trend into mid-2012
 
 ---
 
@@ -90,7 +105,7 @@ Customers were segmented into three tiers using `pd.qcut` on predicted CLTV:
 - **Inventory:** Prioritize stock for the top 10 best-selling products to minimize lost sales
 - **Market Focus:** Concentrate promotional investment in the **UK market**, which drives the majority of revenue
 - **Retention:** Build loyalty programs specifically for **High CLTV** customers to protect long-term revenue
-- **Seasonal Campaigns:** Align marketing spend with **peak revenue months** identified in the trend analysis
+- **Seasonal Campaigns:** Align marketing spend with **November peak** identified in the trend analysis
 - **Forecasting:** Use the 6-month revenue forecast to guide budget allocation and resource planning
 
 ---
@@ -110,7 +125,11 @@ Customers were segmented into three tiers using `pd.qcut` on predicted CLTV:
 📦 ecommerce-analysis/
  ┣ 📓 market-analysis.ipynb          # Main analysis notebook
  ┣ 📄 customer_cltv_segments.csv     # CLTV prediction & segment output
- ┗ 📄 README.md                      # Project documentation
+ ┣ 📄 README.md                      # Project documentation
+ ┗ 📂 images/
+    ┣ 🖼️ top_products.png            # Top 10 best-selling products chart
+    ┣ 🖼️ top_countries.png           # Top 10 countries by sales chart
+    ┗ 🖼️ revenue_forecast.png        # Revenue forecast chart
 ```
 
 ---
@@ -130,7 +149,3 @@ jupyter notebook market-analysis.ipynb
 ```
 
 ---
-
-*👤 Author: **Your Name** | 📧 your.email@example.com | [LinkedIn](https://linkedin.com/in/yourprofile)*
-
-> ⭐ If you found this project useful, consider giving it a star!
