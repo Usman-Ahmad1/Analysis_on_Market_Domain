@@ -49,7 +49,8 @@ The analysis utilized a transactional e-commerce dataset containing **500,000+ r
 
 ### Top 10 Best-Selling Products
 
-![Top 10 Best-Selling Products](images/top_products.png)
+![Top 10 Best-Selling Products](<img width="1189" height="590" alt="top_products" src="https://github.com/user-attachments/assets/84f67bd3-6343-4735-b333-ed1b8db99a8f" />
+)
 
 **JUMBO BAG RED RETROSPOT** leads all products by a significant margin, with over 35,000 units sold. The top 10 products form the inventory backbone of the business and should be prioritized in stock planning.
 
@@ -57,7 +58,8 @@ The analysis utilized a transactional e-commerce dataset containing **500,000+ r
 
 ### Top 10 Countries by Total Sales
 
-![Top 10 Countries by Total Sales](images/top_countries.png)
+![Top 10 Countries by Total Sales](<img width="990" height="590" alt="top_countries" src="https://github.com/user-attachments/assets/a9f4a3d4-ab58-485a-8ad4-2f1c62f70281" />
+)
 
 🇬🇧 The **United Kingdom** completely dominates sales revenue — dwarfing all other markets combined. EIRE, Germany, and the Netherlands follow as secondary markets, highlighting a clear geographic concentration of demand.
 
@@ -65,7 +67,8 @@ The analysis utilized a transactional e-commerce dataset containing **500,000+ r
 
 ### Revenue Forecasting
 
-![Revenue Forecast - Next 6 Months](images/revenue_forecast.png)
+![Revenue Forecast - Next 6 Months](<img width="1189" height="590" alt="revenue_forecast" src="https://github.com/user-attachments/assets/49702768-28af-4d91-84a1-aef40b764265" />
+)
 
 - Trained a **Linear Regression** model on monthly aggregated revenue
 - Forecasted the next **6 months** of revenue (shown as the red dashed line)
@@ -149,3 +152,6 @@ jupyter notebook market-analysis.ipynb
 ```
 
 ---
+👤 Author: **Usman Ahmad** | 📧 uahmaddatascientist@gmail.com | [LinkedIn](www.linkedin.com/in/usman-ahmad-8ab561375)*
+
+> ⭐ If you found this project useful, consider giving it a star!
